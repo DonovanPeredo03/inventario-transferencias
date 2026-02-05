@@ -37,6 +37,17 @@ Seguridad:
 ### Transferencia entre sucursales
 ![Transferencia](screenshots/transferencia.png)
 
+## Enlaces del proyecto
+
+Frontend en producción:  
+https://inventario-transferencias.vercel.app/
+
+Backend (API):  
+https://inventario-transferencias.onrender.com/
+
+Repositorio en GitHub:  
+https://github.com/DonovanPeredo03/inventario-transferencias
+
 ## Cómo ejecutar el proyecto
 
 ### 1. Clonar el repositorio
