@@ -23,6 +23,20 @@ Seguridad:
 - JSON Web Token (JWT)
 - bcrypt para encriptación de contraseñas
 
+## Capturas del sistema
+
+### Pantalla de inicio de sesión
+![Login](screenshots/login.png)
+
+### Panel de administrador
+![Admin](screenshots/admin.png)
+
+### Inventario por sucursal
+![Inventario](screenshots/inventario.png)
+
+### Transferencia entre sucursales
+![Transferencia](screenshots/transferencia.png)
+
 ## Cómo ejecutar el proyecto
 
 ### 1. Clonar el repositorio
@@ -34,12 +48,12 @@ git clone https://github.com/DonovanPeredo03/inventario-transferencias.git
 Backend:
 
 cd "Inventario 2.0"  
-npm install
+npm install  
 
 Frontend:
 
 cd frontend  
-npm install
+npm install  
 
 ### 3. Configurar variables de entorno
 
@@ -55,11 +69,11 @@ Cada usuario debe usar su propia base de datos en MongoDB Atlas.
 
 Backend:
 
-node server.js
+node server.js  
 
 Frontend:
 
-npm run dev
+npm run dev  
 
 Luego abrir en el navegador:
 
@@ -72,8 +86,8 @@ usuario: admin
 contraseña: admin123  
 
 Usuario normal:  
-usuario: user  
-contraseña: user123  
+usuario: Donovan  
+contraseña: 123  
 
 ## Funcionalidades principales
 
