@@ -1,118 +1,197 @@
-# Sistema de Inventario con Transferencias
+# Inventory Management System
 
-Este proyecto consiste en un sistema web para la administración de inventario entre diferentes sucursales.  
-Permite iniciar sesión con distintos roles, gestionar productos, controlar existencias y realizar transferencias de inventario entre sucursales.
+A full-stack inventory management system developed for **Grupo Mandala** to streamline inventory operations across multiple branches.
 
-Fue desarrollado como parte de una práctica académica con el objetivo de aplicar conceptos de desarrollo fullstack, conexión a base de datos en la nube y manejo de autenticación.
+The application provides secure authentication, role-based access control, inventory tracking, product transfers, and a RESTful API built with **Node.js**, **Express.js**, **React**, and **MongoDB Atlas**.
 
-## Tecnologías utilizadas
+---
 
-Frontend:
-- React
-- Vite
-- Tailwind CSS
+## Features
 
-Backend:
-- Node.js
-- Express
+- Secure authentication using JSON Web Tokens (JWT)
+- Role-Based Access Control (RBAC)
+- Product management
+- Multi-branch inventory management
+- Inventory transfers between branches
+- Inventory movement history
+- Responsive user interface
+- RESTful API architecture
 
-Base de datos:
-- MongoDB Atlas
+---
 
-Seguridad:
-- JSON Web Token (JWT)
-- bcrypt para encriptación de contraseñas
+## Tech Stack
 
-## Capturas del sistema
+| Category | Technologies |
+|----------|--------------|
+| **Frontend** | React, Vite, Tailwind CSS |
+| **Backend** | Node.js, Express.js |
+| **Database** | MongoDB Atlas |
+| **Authentication** | JWT, bcrypt |
+| **Deployment** | Vercel, Render |
 
-### Pantalla de inicio de sesión
+---
+
+## Technical Highlights
+
+- Designed and developed a RESTful API using Express.js.
+- Implemented secure authentication with JWT and password hashing using bcrypt.
+- Built Role-Based Access Control (RBAC) for administrators and standard users.
+- Integrated MongoDB Atlas for cloud-based database management.
+- Developed reusable React components with Vite and Tailwind CSS.
+- Deployed the frontend on Vercel and the backend on Render.
+
+---
+
+## Screenshots
+
+### Login
+
 ![Login](screenshots/login.png)
 
-### Panel de administrador
-![Admin](screenshots/admin.png)
+Secure authentication interface with role-based access.
 
-### Inventario por sucursal
-![Inventario](screenshots/inventario.png)
+---
 
-### Transferencia entre sucursales
-![Transferencia](screenshots/transferencia.png)
+### Admin Dashboard
 
-## Enlaces del proyecto
+![Admin Dashboard](screenshots/admin.png)
 
-Frontend en producción:  
-https://inventario-transferencias.vercel.app/
+Administrative dashboard for managing products, users, and inventory operations.
 
-Backend (API):  
-https://inventario-transferencias.onrender.com/
+---
 
-Repositorio en GitHub:  
-https://github.com/DonovanPeredo03/inventario-transferencias
+### Branch Inventory
 
-## Cómo ejecutar el proyecto
+![Branch Inventory](screenshots/inventario.png)
 
-### 1. Clonar el repositorio
+Inventory management interface for monitoring stock across multiple branches.
 
+---
+
+### Inventory Transfer
+
+![Inventory Transfer](screenshots/transferencia.png)
+
+Transfer products between branches while keeping inventory records synchronized.
+
+---
+
+## Live Demo
+
+- **Frontend:** https://inventario-transferencias.vercel.app/
+- **Backend API:** https://inventario-transferencias.onrender.com/
+- **Repository:** https://github.com/DonovanPeredo03/inventario-transferencias
+
+---
+
+## Getting Started
+
+### Clone the Repository
+
+```bash
 git clone https://github.com/DonovanPeredo03/inventario-transferencias.git
+cd inventario-transferencias
+```
 
-### 2. Instalar dependencias
+### Install Dependencies
 
-Backend:
+#### Backend
 
-cd "Inventario 2.0"  
-npm install  
+```bash
+cd "Inventario 2.0"
+npm install
+```
 
-Frontend:
+#### Frontend
 
-cd frontend  
-npm install  
+```bash
+cd frontend
+npm install
+```
 
-### 3. Configurar variables de entorno
+### Configure Environment Variables
 
-Dentro de la carpeta **Inventario 2.0** crear un archivo llamado `.env` con el siguiente contenido:
+Create a `.env` file inside the **Inventario 2.0** directory.
 
-PORT=3000  
-MONGO_URI=tu_cadena_de_conexion_de_mongodb  
-JWT_SECRET=clave_secreta  
+```env
+PORT=3000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+```
 
-Cada usuario debe usar su propia base de datos en MongoDB Atlas.
+> **Note:** Use your own MongoDB Atlas connection string.
 
-### 4. Ejecutar el sistema
+### Run the Application
 
-Backend:
+#### Start Backend
 
-node server.js  
+```bash
+node server.js
+```
 
-Frontend:
+#### Start Frontend
 
-npm run dev  
+```bash
+npm run dev
+```
 
-Luego abrir en el navegador:
+The application will be available at:
 
+```
 http://localhost:5173
+```
 
-## Usuarios de prueba
+---
 
-Administrador:  
-usuario: admin  
-contraseña: admin123  
+## Demo Accounts
 
-Usuario normal:  
-usuario: Donovan  
-contraseña: 123  
+### Administrator
 
-## Funcionalidades principales
+| Username | Password |
+|----------|----------|
+| admin | admin123 |
 
-- Inicio de sesión con control de roles  
-- Registro y consulta de productos  
-- Manejo de inventario por sucursal  
-- Transferencias de inventario entre sucursales  
-- Historial de movimientos de inventario  
+### Standard User
 
-## Objetivo del proyecto
+| Username | Password |
+|----------|----------|
+| Donovan | 123 |
 
-El propósito de este sistema es comprender la integración completa entre frontend, backend y base de datos, así como la implementación de autenticación y control de inventario en un entorno distribuido por sucursales.
+---
 
-## Autor
+## Project Structure
 
-Samuel Donovan Peredo Jiménez  
-Ingeniería en Ciencias Computacionales
+```text
+inventario-transferencias
+│
+├── frontend/          # React + Vite application
+├── Inventario 2.0/    # Express.js REST API
+├── screenshots/       # Project screenshots
+└── README.md
+```
+
+---
+
+## Future Improvements
+
+- Barcode and QR code integration
+- Email notifications for inventory transfers
+- Export reports to PDF and Excel
+- Inventory analytics dashboard
+- Real-time updates using WebSockets
+- Docker containerization
+- CI/CD pipeline with GitHub Actions
+
+---
+
+## Author
+
+**Samuel Donovan Peredo Jiménez**
+
+Computer Science Student  
+University of Guadalajara (UDG)
+
+**Backend Development • Data Intelligence**
+
+- GitHub: https://github.com/DonovanPeredo03
+- LinkedIn: https://www.linkedin.com/in/samuel-donovan-peredo-jimenez-16275b385/
